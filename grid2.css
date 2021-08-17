@@ -1,0 +1,24 @@
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-gap: 20px;
+  padding: 0px 10px;
+}
+.sidebar > div {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid2 {
+    display: block;
+  }
+  .sidebar {
+    display: flex;
+    overflow: scroll;
+    margin-top: 40px;
+  }
+  .sidebar > div {
+    flex: 1 0 200px;
+    margin: 0px 10px;
+  }
+}
